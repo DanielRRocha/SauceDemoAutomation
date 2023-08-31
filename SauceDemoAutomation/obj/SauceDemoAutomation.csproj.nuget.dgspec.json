@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj": {}
+    "C:\\Projects\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj": {
+    "C:\\Projects\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj",
+        "projectUniqueName": "C:\\Projects\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj",
         "projectName": "SauceDemoAutomation",
-        "projectPath": "C:\\Projetos\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj",
+        "projectPath": "C:\\Projects\\SauceDemoAutomation\\SauceDemoAutomation\\SauceDemoAutomation.csproj",
         "packagesPath": "C:\\Users\\vboxuser\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\SauceDemoAutomation\\SauceDemoAutomation\\obj\\",
+        "outputPath": "C:\\Projects\\SauceDemoAutomation\\SauceDemoAutomation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[6.12.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.2, )"
@@ -64,6 +68,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[116.0.5845.9600, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             },
             "SpecFlow.Assist.Dynamic": {
               "target": "Package",
