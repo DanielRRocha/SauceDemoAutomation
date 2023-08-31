@@ -24,7 +24,6 @@ namespace SauceDemoAutomation.Hooks
         public static void BeforeScenario()
         {
             Console.WriteLine("Initializing test");
-            //string url = ;
             driver = new ChromeDriver();
             driver.Url = ConfigurationManager.AppSettings["url"];
             driver.Manage().Window.Maximize();
