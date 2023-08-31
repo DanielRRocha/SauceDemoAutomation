@@ -1,9 +1,7 @@
-﻿using BoDi;
+﻿using System.Configuration;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using TechTalk.SpecFlow;
 
 namespace SauceDemoAutomation.Hooks
 {
@@ -23,7 +21,7 @@ namespace SauceDemoAutomation.Hooks
         {
             Console.WriteLine("Initializing test");
             driver = new ChromeDriver();
-            driver.Url = "https://www.saucedemo.com/";
+            driver.Url = ConfigurationManager.AppSettings["url"];
             driver.Manage().Window.Maximize();
             testContext = TestContext.CurrentContext;
             Console.WriteLine($"Test Name: {testContext.Test.MethodName}");
