@@ -1,11 +1,7 @@
-﻿using System;
-using System.Configuration;
-using BoDi;
+﻿using System.Configuration;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using TechTalk.SpecFlow;
 
 namespace SauceDemoAutomation.Hooks
 {
