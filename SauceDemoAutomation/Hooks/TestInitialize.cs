@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using System.Net.NetworkInformation;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -16,12 +17,22 @@ namespace SauceDemoAutomation.Hooks
             return driver;
         }
 
+        public static string? GetAppSettings(string key)
+        {
+            return ConfigurationManager.AppSettings[key];
+        }
+
+        public static TestContext? GetTestContext()
+        {
+            return testContext;
+        }
+
         [BeforeScenario(Order = 1)]
         public static void BeforeScenario()
         {
             Console.WriteLine("Initializing test");
             driver = new ChromeDriver();
-            driver.Url = ConfigurationManager.AppSettings["url"];
+            driver.Url = GetAppSettings("url");
             driver.Manage().Window.Maximize();
             testContext = TestContext.CurrentContext;
             Console.WriteLine($"Test Name: {testContext.Test.MethodName}");
