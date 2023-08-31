@@ -6,9 +6,9 @@ namespace SauceDemoAutomation.Pages
     internal class LoginPage
     {
         private IWebDriver driver;
-        public LoginPage()
+        public LoginPage(IWebDriver _driver)
         {
-            driver = TestInitialize.GetDriver();
+            driver = _driver;
         }
 
         public IWebElement userName => driver.FindElement(By.Id("user-name"));

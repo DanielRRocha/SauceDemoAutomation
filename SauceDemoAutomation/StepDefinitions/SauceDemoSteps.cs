@@ -22,8 +22,8 @@ namespace SauceDemoAutomation.StepDefinitions
             context = injectedContext;
             driver = TestInitialize.GetDriver();
             wait = new WebDriverWait(driver, new TimeSpan(0, 0, 5));
-            loginPage  = new LoginPage();
-            homePage = new HomePage();
+            loginPage  = new LoginPage(driver);
+            homePage = new HomePage(driver);
         }
 
         [Given(@"I have access to login page")]
